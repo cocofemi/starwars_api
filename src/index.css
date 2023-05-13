@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  background: black;
+  color: #fff;
+  max-width: 1440px;
+}
+.logo {
+  width: 35%;
+  height: fit-content;
+  display: block;
+  margin: 30px auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0 40px;
+}
+
+.card {
+  border-radius: 8px;
+  margin: 20px;
+  padding: 0 20px;
+  width: 20rem;
+}
+
+.card:hover {
+  box-shadow: 1px 0.1px 5px 4px #39468f;
+  transition: 0.3s;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+
+.when {
+  margin-top: -16px;
+  font-size: 15px;
+  color: grey;
+}
+
+.opening-crawl {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+hr {
+  height: 2px;
+  background-color: rgb(126, 45, 45);
+  border: none;
+}
+
+.info {
+  color: yellow;
+  text-decoration: none;
+}
+
+.card:nth-child(1) {
+  background-image: url(./components/images/bg-card-1.0c96fd00.png);
+}
+.card:nth-child(2) {
+  background-image: url(./components/images/bg-card-2.b0a7b209.png);
+}
+.card:nth-child(3) {
+  background-image: url(./components/images/bg-card-3.1914d853.png);
+}
+.card:nth-child(4) {
+  background-image: url(./components/images/bg-card-4.c21c4d4b.png);
+}
+.card:nth-child(5) {
+  background-image: url(./components/images/bg-card-5.67d061d6.png);
+}
+.card:nth-child(6) {
+  background-image: url(./components/images/bg-card-6.b4fea25d.png);
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    display: block;
+  }
+  .logo {
+    width: 20rem;
+  }
+  .card {
+    padding: 10px 20px;
+  }
+}
